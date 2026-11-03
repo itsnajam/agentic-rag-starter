@@ -1,0 +1,57 @@
+[
+  {
+    "id": "overlap-purpose",
+    "question": "Why carry some text over into the next chunk instead of cutting cleanly?",
+    "expect": { "sourcePath": "chunking-and-retrieval.md", "terms": ["boundar"] }
+  },
+  {
+    "id": "fusion-constant",
+    "question": "What constant is normally used in reciprocal rank fusion?",
+    "expect": { "sourcePath": "chunking-and-retrieval.md", "terms": ["60"] }
+  },
+  {
+    "id": "index-choice",
+    "question": "Which pgvector index is the honest default for a corpus of a few hundred thousand chunks?",
+    "expect": { "sourcePath": "chunking-and-retrieval.md", "terms": ["hnsw"] }
+  },
+  {
+    "id": "vector-weakness",
+    "question": "What kind of query does embedding similarity handle badly?",
+    "expect": { "sourcePath": "chunking-and-retrieval.md", "terms": ["exact"] }
+  },
+  {
+    "id": "owner-filter-sql",
+    "question": "Why should the ownership check live in the query rather than after it?",
+    "expect": { "sourcePath": "permissions-and-injection.md", "terms": ["leave the database"] }
+  },
+  {
+    "id": "fence-escaping",
+    "question": "What has to be stripped out of retrieved text before wrapping it in delimiters?",
+    "expect": { "sourcePath": "permissions-and-injection.md", "terms": ["fence", "closing"] }
+  },
+  {
+    "id": "agent-bounds",
+    "question": "What two limits keep an agent loop from running away with your budget?",
+    "expect": { "sourcePath": "permissions-and-injection.md", "terms": ["step", "spend"] }
+  },
+  {
+    "id": "eval-two-metrics",
+    "question": "Which two measurements should be reported separately when evaluating retrieval?",
+    "expect": { "sourcePath": "running-evals.md", "terms": ["hit rate", "citation"] }
+  },
+  {
+    "id": "fake-provider-scope",
+    "question": "What does a hit rate measured with the local fake embedding provider actually tell you?",
+    "expect": { "sourcePath": "running-evals.md", "terms": ["plumbing"] }
+  },
+  {
+    "id": "refusal-unknown-metrics",
+    "question": "What was the churn rate in the third quarter of 2025?",
+    "expect": { "refuse": true }
+  },
+  {
+    "id": "refusal-hosted-pricing",
+    "question": "How much does the hosted version cost per month?",
+    "expect": { "refuse": true }
+  }
+]
