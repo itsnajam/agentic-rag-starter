@@ -1,5 +1,13 @@
 # Agentic RAG Starter
 
+Ask a question about your own documents and get an answer that names the file it came from. That is what this
+repo does. It reads your files, finds the passages that answer the question, writes a reply from those passages,
+and says it does not know when your documents do not contain the answer. One small agent can also search and read
+on its own, with a fixed list of two read-only tools and limits on how far it may go.
+
+There is no hosted demo. It runs on your own machine with the two commands below, and it works before you add any
+API key.
+
 Chat over your own documents with citations, plus one bounded agent loop. Next.js, TypeScript, PostgreSQL with
 pgvector, and Claude for the answering.
 
@@ -207,8 +215,15 @@ that keeps sentences whole, two searches that cover each other's blind spot, per
 refusal that arrives before the model does rather than after it. The tests are the part I would want to read if
 I found the repo in your place.
 
+If you are choosing between this approach and fine-tuning a model on your documents, the comparison written for a
+business owner is [RAG vs fine-tuning](https://najam.dev/guides/rag-vs-fine-tuning/). What a build like this costs,
+and what it costs to run each month, is broken into four parts in
+[RAG chatbot cost](https://najam.dev/guides/rag-chatbot-cost/).
+
 ## License
 
 MIT. See `LICENSE`.
 
-Built by Najam, agentic software engineer, [najam.dev](https://najam.dev).
+Built by Najam, who builds these for small and medium businesses: https://najam.dev/services/agentic-ai-and-rag-development/
+
+More of my work: [najam.dev](https://najam.dev).
